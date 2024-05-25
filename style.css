@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Lato;
+}
+
+
+.video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 1vh;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.header{
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #FF6A6A;
+    display: flex;
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+.header:hover{
+    height: 100px;
+    opacity: 0.7;
+}
+
+.header p{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header p:hover{
+    color: black;
+}
+
+.title-cont{
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    margin-top: 200px;
+    align-items: center;
+}
+
+.title{
+    color: white;
+    font-size: 140px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.title-desc{
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.hero-button{
+    background-color: #FAFF00;
+    border: none;
+    width: 260px;
+    height: 90px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 100px;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.hero-button:hover{
+    background-color: #FF6A6A;
+    color: #FAFF00
+}
+
+span{
+    background-image: linear-gradient(to right, orange 0%, red 100%);
+    background-clip: text;
+    color: transparent;
+}
