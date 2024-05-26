@@ -139,6 +139,8 @@ span{
 
 .img-text{
     display: flex;
+    margin-top: 50px;
+    align-items: center;
 }
 
 .img-text p{
