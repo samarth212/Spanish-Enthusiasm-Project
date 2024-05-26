@@ -1,0 +1,51 @@
+
+.bg{
+    width: 100%;
+    margin:0;
+}
+
+.title-cont{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    align-items: center;
+    top: 20%;
+}
+
+.title{
+    color: white;
+    font-size: 120px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.title-desc{
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+.hero-button{
+    background-color: #FAFF00;
+    border: none;
+    width: 260px;
+    height: 90px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 100px;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.hero-button:hover{
+    background-color: #FF6A6A;
+    color: #FAFF00
+}
+
+span{
+    background-image: linear-gradient(to right, orange 0%, red 100%);
+    background-clip: text;
+    color: transparent;
+}
