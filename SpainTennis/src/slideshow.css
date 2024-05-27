@@ -1,0 +1,42 @@
+.sliderImg{
+    object-fit: cover;
+    width: 1000px;
+    height: 500px;
+    display: block;
+}
+
+.sliderBtn1{
+    display: block;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    padding: 1rem;
+    left:0;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 60px;
+    transition: all 0.2s;
+
+}
+
+.sliderBtn2{
+    display: block;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right:0;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 60px;
+    transition: all 0.2s;
+}
+
+.sliderBtn1:hover, .sliderBtn2:hover{
+    color: greenyellow;
+    font-size: 75px;
+}
