@@ -40,6 +40,6 @@
 }
 
 .sliderBtn1:hover, .sliderBtn2:hover{
-    color: greenyellow;
+    color: rgb(0, 208, 255);
     font-size: 75px;
 }
