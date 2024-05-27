@@ -1,6 +1,7 @@
 import './App.css'
 import Hero from './Hero'
 import Legacy from './Legacy';
+import Clay from './Clay'
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <>
       <Hero></Hero>
       <Legacy></Legacy>
-    
+      <Clay></Clay>
     </>
   )
   

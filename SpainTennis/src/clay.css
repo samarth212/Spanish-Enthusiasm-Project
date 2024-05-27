@@ -1,0 +1,30 @@
+.section2{
+    height:1500px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: #1b1b1b;
+    margin-top: 800px;
+}
+.section2 p{
+    width: 1600px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.section2 h1{
+    background-image: linear-gradient(to right, orange 0%, red 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.img-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    padding: 100px;
+}

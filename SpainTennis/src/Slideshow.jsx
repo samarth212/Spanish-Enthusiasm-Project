@@ -37,7 +37,7 @@ const SlideShow = ({imageUrls}) => {
 
         
 
-        <div style={{width:"1000px", height:"500px", position:"relative"}}>
+        <div style={{width:"800px", height:"500px", position:"relative"}}>
             <div style={{width:"100%", height:"100%", display:"flex", overflow:"hidden"}}>
                 {imageUrls.map(url => (
                     <img key={url} src={url} alt="" className="sliderImg" style={{translate:`${-100*imageIndex}%`}} />
