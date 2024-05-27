@@ -15,11 +15,15 @@ const Clay = () => {
 
     return (
         <div className="section2">
-            <h1>The Clay Court Advantage</h1>
-            <div className="img-text">
-                <Slideshow imageUrls = {images}></Slideshow>
-                <p style={{marginLeft:"60px", lineHeight:"40px"}}>Spain boasts some of the world's best clay courts. Made from crushed brick, shale, or limestone, these courts create a grippy surface that slows down the ball, encouraging strategic rallies and demanding endurance from players. This characteristic makes them perfect for the grueling, baseline-oriented style of play that Spanish tennis is known for.</p>
+
+            <div style={{display:"flex", alignItems:"center", marginTop:"50px", marginBottom:"50px"}}>
+                <h1>The Clay Court Advantage</h1>
+                <p style={{width: "800px"}}>Spain boasts some of the world's best clay courts. Made from crushed brick, shale, or limestone, these courts create a grippy surface that slows down the ball, encouraging strategic rallies and demanding endurance from players. This characteristic makes them perfect for the grueling, baseline-oriented style of play that Spanish tennis is known for.</p>
             </div>
+
+            <Slideshow imageUrls = {images}></Slideshow>
+
+
         </div>
 
     )
