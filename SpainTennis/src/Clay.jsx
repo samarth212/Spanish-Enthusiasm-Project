@@ -19,7 +19,7 @@ const images = [clay1, clay2, clay3, clay4, clay5]
 const Clay = () => {
 
     return (
-        <div className="section2">
+        <div className="section2" id="clay">
 
             <div style={{display:"flex", alignItems:"center", marginTop:"50px", marginBottom:"50px"}}>
                 <h1>The Clay Court Advantage</h1>

@@ -5,6 +5,9 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 0;
+    width: 100%;
+    background-color: white;
+    
 }
 .section1 p{
     width: 800px;

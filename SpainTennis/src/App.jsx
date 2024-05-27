@@ -4,6 +4,7 @@ import Legacy from './Legacy';
 import Clay from './Clay'
 import Rise from './Rise';
 import Borders from './Borders';
+import Conclusion from './Conclusion';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Clay></Clay>
       <Rise></Rise>
       <Borders></Borders>
+      <Conclusion></Conclusion>
     </>
   )
   

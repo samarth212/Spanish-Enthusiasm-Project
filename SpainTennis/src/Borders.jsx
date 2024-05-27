@@ -1,5 +1,4 @@
 import "./borders.css";
-import Slideshow from "./Slideshow";
 import inter1 from "./assets/images/inter1.jpeg"
 import inter2 from "./assets/images/inter2.avif"
 
@@ -8,7 +7,7 @@ import inter2 from "./assets/images/inter2.avif"
 const Borders = () => {
 
     return (
-        <div className="section4">
+        <div className="section4" id="borders">
 
             <div style={{display:"flex", alignItems:"center", marginTop:"50px", marginBottom:"50px"}}>
                 <h1>Beyond Spain's Borders</h1>

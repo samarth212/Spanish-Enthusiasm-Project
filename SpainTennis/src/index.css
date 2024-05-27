@@ -1,8 +1,12 @@
 :root {
   font-family: Lato;
+  scroll-behavior: smooth;
+
 }
 
 body{
   display: flex;
   margin: 0;
+  scroll-behavior: smooth;
+
 }

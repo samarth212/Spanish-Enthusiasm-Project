@@ -7,7 +7,7 @@ const Legacy = () => {
     return (
         <>
         
-        <div className="section1">
+        <div className="section1" id="legacy">
 
             <div style={{display:"flex", alignItems:"center", marginTop:"50px"}}>
                 <h1>A Legacy of Champions</h1>
@@ -35,10 +35,10 @@ const Legacy = () => {
                  
             
             
-            
+            <video src={vid} width="100%" autoPlay loop muted style={{marginTop:"70px"}}></video>
+
         </div>
         
-        <video src={vid} width="100%" autoPlay loop muted style={{marginTop:"70px"}}></video>
 
         
         </>
