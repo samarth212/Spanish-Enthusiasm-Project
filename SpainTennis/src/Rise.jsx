@@ -30,11 +30,25 @@ const Rise = () => {
 
 
             </div>
-
+            <p style={{fontWeight:"700", fontSize:"30px"}}>Quick Stats</p>
             <div className="counter">
-                <Counter start={0} end={100} duration={2.5} unit="+"/>
-                <Counter start={0} end={100} duration={2.5} unit="+"/>
-                <Counter start={0} end={100} duration={2.5} unit="+"/>
+                <div style={{display:"flex", flexDirection:"column", alignItems:"center", marginLeft:"10px", marginRight:"10px"}}>
+                    <Counter start={0} end={90000} duration={2.5} unit="+"/>
+                    <p style={{fontWeight:"500", marginTop:"0"}}>People in Spain who play tennis</p>
+                </div>
+                <div style={{display:"flex", flexDirection:"column", alignItems:"center", marginLeft:"10px", marginRight:"10px"}}>
+                    <Counter start={0} end={1000} duration={2.5} unit="+"/>
+                    <p style={{fontWeight:"500", marginTop:"0"}}>Tennis clubs in Spain</p>
+                </div>
+                <div style={{display:"flex", flexDirection:"column", alignItems:"center", marginLeft:"10px", marginRight:"10px"}}>
+                    <Counter start={0} end={6000} duration={2.5} unit="+"/>
+                    <p style={{fontWeight:"500", marginTop:"0"}}>Tennis courts in Spain</p>
+                </div>
+                <div style={{display:"flex", flexDirection:"column", alignItems:"center", marginLeft:"10px", marginRight:"10px"}}>
+                    <Counter start={0} end={30} duration={2.5} unit="%"/>
+                    <p style={{fontWeight:"500", marginTop:"0"}}>of Spain watch tennis</p>
+                </div>
+                
             </div>
 
 

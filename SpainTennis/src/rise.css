@@ -23,8 +23,11 @@
 
 .counter{
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 200px;
-    background-color: rgb(43, 199, 246);
+    background-color: rgb(246, 121, 43);
     color: white !important;
+    font-size: 30px;
 }
