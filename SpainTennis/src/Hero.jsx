@@ -19,6 +19,7 @@ const Hero = () => {
         <img className="bg" src={hero1}/>
         <div className="title-cont">
             <p className="title">Tennis in <span>Spain</span></p>
+            <div className="warn">This site is not optimized for mobile. It is recommended to view on a desktop or a PC.</div>
             <p className="title-desc">Explore this website to learn about how tennis has been influential part of Spanish culture.</p>
             <a href="#legacy"><button className="hero-button">Learn More</button></a>
         </div>
