@@ -9,7 +9,7 @@ const Hero = () => {
         <>
         
         <div style={{display:"flex", position:"absolute", top:"20px"}} className="nav">
-            <a href="/about">About</a>
+            <a href="/about" target="_blank">About</a>
             <a href="#legacy">A Legacy of Champions</a>
             <a href="#clay">The Clay Court Advantage</a>
             <a href="#rise">A Sport on the Rise</a>

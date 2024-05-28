@@ -1,14 +1,21 @@
 import "./rise.css";
 import tennis from "./assets/images/tennis1.jpeg"
 import Counter from "./Counter";
+import "animate.css"
+import { useInView } from 'react-intersection-observer';
 
 const Rise = () => {
+
+    const { ref: animationRef, inView: animationInView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1, 
+    });
 
     return (
         <>
         
         <div className="section3" id="rise">
-            <div style={{display:"flex", alignItems:"center", marginTop:"50px", marginBottom:"50px"}}>
+            <div ref={animationRef} style={{display:"flex", alignItems:"center", marginTop:"50px", marginBottom:"50px"}} className={`animate__animated ${animationInView ? 'animate__backInRight' : 'empty'}`}>
                     <h1>A Sport on the Rise</h1>
                     <p style={{width: "800px"}}>The rise of young stars like Carlos Alcaraz has ignited a new wave of passion for tennis among Spanish youth. And with Spain already having a large tennis culture, tennis is only growing in popularity within the country.</p>
             </div>

@@ -1,0 +1,17 @@
+.cont a{
+    all: unset;
+    color: white;
+    font-size: 20px;
+    transition: all 0.53;
+}
+
+.cont a:hover{
+    color: rgb(0, 183, 255);
+}
+
+.cont p{
+    color: white;
+    font-size: 25px;
+    max-width: 1000px;
+
+}

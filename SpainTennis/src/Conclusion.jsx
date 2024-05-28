@@ -31,7 +31,7 @@ const Conclusion = () => {
             <p style={{marginBottom:"100px"}}>This website is your gateway to the captivating world of Spanish tennis. I invite you to explore further, engage with the community, and allow yourself to be inspired by the passion and dedicaton that defines Spanish tennis.</p>
 
             <div className="nav2" style={{width:"100%", height:"200px", backgroundColor:"white", display:"flex", alignItems:"center", justifyContent:"center"}}>
-                <a href="/about">About</a>
+                <a href="/about" target="_blank">About</a>
                 <a href="#legacy">A Legacy of Champions</a>
                 <a href="#clay">The Clay Court Advantage</a>
                 <a href="#rise">A Sport on the Rise</a>

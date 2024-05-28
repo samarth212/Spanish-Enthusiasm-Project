@@ -1,15 +1,21 @@
 import "./borders.css";
 import inter1 from "./assets/images/inter1.jpeg"
 import inter2 from "./assets/images/inter2.avif"
-
+import "animate.css"
+import { useInView } from 'react-intersection-observer';
 
 
 const Borders = () => {
 
+    const { ref: animationRef, inView: animationInView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1, 
+    });
+
     return (
         <div className="section4" id="borders">
 
-            <div style={{display:"flex", alignItems:"center", marginTop:"50px", marginBottom:"50px"}}>
+            <div ref={animationRef} style={{display:"flex", alignItems:"center", marginTop:"50px", marginBottom:"50px"}} className={`animate__animated ${animationInView ? 'animate__backInRight' : 'empty'}`}>
                 <h1>Beyond Spain's Borders</h1>
                 <p style={{width: "800px"}}>Tennis serves as a powerful tool for growth and opportunity across Spanish-speaking countries, not only in Spain but throughout Latinamerica as well.</p>
             </div>

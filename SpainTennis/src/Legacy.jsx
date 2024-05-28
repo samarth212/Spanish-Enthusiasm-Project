@@ -1,15 +1,21 @@
 import "./legacy.css";
 import vid from "./assets/spanishvid.mp4"
+import "animate.css"
+import { useInView } from 'react-intersection-observer';
 
 
 const Legacy = () => {
+    const { ref: animationRef, inView: animationInView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1, 
+    });
 
     return (
         <>
         
         <div className="section1" id="legacy">
 
-            <div style={{display:"flex", alignItems:"center", marginTop:"50px"}}>
+            <div ref={animationRef} style={{display:"flex", alignItems:"center", marginTop:"50px"}} className={`animate__animated ${animationInView ? 'animate__backInRight' : 'empty'}`}>
                 <h1>A Legacy of Champions</h1>
                 <p>Spain's tennis pedigree is undeniable. From legends like Rafael Nadal and David Ferrer to the current world #1 Carlos Alcaraz Spanish players have dominated the sport for decades. Explore the timeline below to see how Spanish players have evolved over the years.</p>
             </div>

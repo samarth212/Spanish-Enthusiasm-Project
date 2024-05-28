@@ -8,6 +8,8 @@ import clay5 from "./assets/images/clay5.webp"
 import clay21 from "./assets/images/clay21.jpeg"
 import clay22 from "./assets/images/clay22.jpeg"
 import clay24 from "./assets/images/clay24.jpeg"
+import "animate.css"
+import { useInView } from 'react-intersection-observer';
 
 
 
@@ -17,11 +19,15 @@ const images = [clay1, clay2, clay3, clay4, clay5]
 
 
 const Clay = () => {
+    const { ref: animationRef, inView: animationInView } = useInView({
+        triggerOnce: true,
+        threshold: 0.5, 
+    });
 
     return (
         <div className="section2" id="clay">
 
-            <div style={{display:"flex", alignItems:"center", marginTop:"50px", marginBottom:"50px"}}>
+            <div ref={animationRef} style={{display:"flex", alignItems:"center", marginTop:"50px", marginBottom:"50px"}} className={`animate__animated ${animationInView ? 'animate__backInRight' : 'empty'}`}>
                 <h1>The Clay Court Advantage</h1>
                 <p style={{width: "800px"}}>Spain boasts some of the world's best clay courts. Made from crushed brick, shale, or limestone, these courts create a grippy surface that slows down the ball, encouraging strategic rallies and demanding endurance from players. This characteristic makes them perfect for the grueling, baseline-oriented style of play that Spanish tennis is known for.</p>
             </div>

@@ -6,6 +6,7 @@ import Rise from './Rise';
 import Borders from './Borders';
 import Conclusion from './Conclusion';
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import About from './About';
 
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
           
         }/>
 
-        
+        <Route path="/about" element={<About></About>}/>
+
       </Routes>
 
     </Router>
