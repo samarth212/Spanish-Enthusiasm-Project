@@ -27,13 +27,13 @@ const Legacy = () => {
             
 
             <div style={{display:"flex", alignItems:"center", marginTop:"20px"}}>
-                <div style={{display:"flex", flexDirection:"column", marginRight:"50px"}}>
-                    <p style={{width:"600px"}}>This success is fueled by a competitive spirit and a dedication to hard work, ingrained within the Spanish tennis community. Aspiring Spanish players train hard every day with hopes of one day becoming the next Spanish tennis prodigy. </p>   
+                <div className="infobox" style={{display:"flex", flexDirection:"column", marginRight:"50px"}}>
+                    <p className="info" style={{width:"600px"}}>This success is fueled by a competitive spirit and a dedication to hard work, ingrained within the Spanish tennis community. Aspiring Spanish players train hard every day with hopes of one day becoming the next Spanish tennis prodigy. </p>   
 
-                    <p style={{width:"600px"}}>Camps hosted by famous Spanish players such as the Rafa Nadal Academy help to inspire young children to develop the drive to be successful.</p>    
+                    <p className="info" style={{width:"600px"}}>Camps hosted by famous Spanish players such as the Rafa Nadal Academy help to inspire young children to develop the drive to be successful.</p>    
                 </div>
 
-                <iframe width="670" height="365" src="https://www.youtube.com/embed/V958Hg80rls?si=Aj7DzTpLJmdGK48b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe className="vid" width="670" height="365" src="https://www.youtube.com/embed/V958Hg80rls?si=Aj7DzTpLJmdGK48b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
             </div>
 

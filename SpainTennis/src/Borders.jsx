@@ -29,7 +29,7 @@ const Borders = () => {
                     <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>Hosting and participating in international tournaments like the Davis Cup and Fed Cup provides valuable experience for players from Spanish-speaking countries. It allows these Latinamerican players to compete against top competition and gain visibility on the world stage. Leading in this stage is Argentina, with a Davis Cup win in 2016 and an international ranking of 15.</p>
                 </div>
 
-                <div style={{display:"flex", flexDirection:"column", marginLeft:"100px"}}>
+                <div className="img" style={{display:"flex", flexDirection:"column", marginLeft:"100px"}}>
                     <img style={{width: "420px", height:"200px", objectFit:"cover", marginBottom:"50px", objectPosition:"bottom center"}} src={inter1} alt="" />
                     <img style={{width: "420px", height:"200px", objectFit:"cover"}} src={inter2} alt="" />
                 </div>

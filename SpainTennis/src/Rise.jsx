@@ -22,7 +22,7 @@ const Rise = () => {
 
             <div style={{display:"flex", alignItems:"center", marginTop:"50px", marginBottom:"50px"}}>
 
-                <img style={{width: "650px", height:"450px", objectFit:"cover"}} src={tennis} alt="" />
+                <img className="img" style={{width: "650px", height:"450px", objectFit:"cover"}} src={tennis} alt="" />
 
                 <div style={{marginLeft:"100px"}}>
                     <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>Grassroots Programs</p>

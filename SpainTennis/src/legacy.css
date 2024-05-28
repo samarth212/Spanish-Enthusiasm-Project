@@ -31,3 +31,38 @@
 
     visibility: hidden;
 }
+
+@media (max-width: 1000px) {
+    .section1 p {
+        width: 200px;
+        padding: 0 20px;
+        margin-top: 20px;
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    .section1 h1 {
+        font-size: 20px;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .section1 iframe {
+        width: 100%;
+        height: 600px;
+    }
+
+    .info{
+        width: 200px !important;
+
+    }
+    .vid{
+        display: none;
+    }
+
+    .infobox{
+        display: flex;
+        flex-direction: row;
+    }
+}
+

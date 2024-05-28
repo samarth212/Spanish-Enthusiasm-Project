@@ -7,7 +7,7 @@ const Conclusion = () => {
 
     return (
         <div className="section5">
-            <img src={court} alt="" style={{width:"100%", height:"800px", objectFit:"cover", position:"fixed", bottom:"0", zIndex:"-10"}}/>
+            <img className="bgimg" src={court} alt="" style={{width:"100%", height:"800px", objectFit:"cover", position:"fixed", bottom:"0", zIndex:"-10"}}/>
 
             <p style={{fontWeight:"500", textAlign:"center"}}>From its cultural significance to its ever-growing popularity, tennis is an essential part of the Spanish identity.</p>
             <p style={{textAlign:"center"}}>And you can become part of this tennis culture as well. Explore the world of Spanish tennis! Visit Spain to experience the passion, or find a local court and embrace the clay court challenge!</p>

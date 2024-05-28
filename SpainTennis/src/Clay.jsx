@@ -46,7 +46,7 @@ const Clay = () => {
                     <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>Clay court matches are known for their physically demanding nature. Spanish players are known for their mental fortitude and ability to stay focused during long rallies.</p>
                 </div>
 
-                <div style={{display:"flex", flexDirection:"column", marginLeft:"100px"}}>
+                <div className="imgcont" style={{display:"flex", flexDirection:"column", marginLeft:"100px"}}>
                     <img style={{width: "420px", height:"200px", objectFit:"cover", marginBottom:"50px", objectPosition:"bottom center"}} src={clay21} alt="" />
                     <img style={{width: "420px", height:"200px", objectFit:"cover"}} src={clay22} alt="" />
                 </div>
