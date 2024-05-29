@@ -38,7 +38,7 @@ const Rise = ({info, toggle}) => {
 
             </div>
             <p style={{fontWeight:"700", fontSize:"30px"}}>{info[26]}</p>
-            <div className="counter">
+            <div className="counter" style={{textAlign:"center"}}>
                 <div style={{display:"flex", flexDirection:"column", alignItems:"center", marginLeft:"10px", marginRight:"10px"}}>
                     <Counter start={0} end={90000} duration={2.5} unit="+"/>
                     <p style={{fontWeight:"500", marginTop:"0"}}>{info[27]}</p>
