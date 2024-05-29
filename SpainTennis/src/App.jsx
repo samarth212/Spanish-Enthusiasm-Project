@@ -29,11 +29,11 @@ function App() {
         <Route path="/" element={
           <>
             <Hero info={toggle ? esp : eng} func={onToggle} toggle={toggle}></Hero>
-            <Legacy></Legacy>
-            <Clay></Clay>
-            <Rise></Rise>
-            <Borders></Borders>
-            <Conclusion></Conclusion>
+            <Legacy info={toggle ? esp : eng} toggle={toggle}></Legacy>
+            <Clay info={toggle ? esp : eng} toggle={toggle}></Clay>
+            <Rise info={toggle ? esp : eng} toggle={toggle}></Rise>
+            <Borders info={toggle ? esp : eng} toggle={toggle}></Borders>
+            <Conclusion info={toggle ? esp : eng} toggle={toggle}></Conclusion>
           </>
           
         }/>

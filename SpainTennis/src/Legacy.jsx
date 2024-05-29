@@ -4,7 +4,7 @@ import "animate.css"
 import { useInView } from 'react-intersection-observer';
 
 
-const Legacy = () => {
+const Legacy = ({info, toggle}) => {
     const { ref: animationRef, inView: animationInView } = useInView({
         triggerOnce: true,
         threshold: 0.1, 
@@ -16,8 +16,8 @@ const Legacy = () => {
         <div className="section1" id="legacy">
 
             <div ref={animationRef} style={{display:"flex", alignItems:"center", marginTop:"50px"}} className={`animate__animated ${animationInView ? 'animate__backInRight' : 'empty'}`}>
-                <h1>A Legacy of Champions</h1>
-                <p>Spain's tennis pedigree is undeniable. From legends like Rafael Nadal and David Ferrer to the current world #1 Carlos Alcaraz Spanish players have dominated the sport for decades. Explore the timeline below to see how Spanish players have evolved over the years.</p>
+                <h1>{info[1]}</h1>
+                <p>{info[9]}</p>
             </div>
             
 
@@ -28,9 +28,9 @@ const Legacy = () => {
 
             <div style={{display:"flex", alignItems:"center", marginTop:"20px"}}>
                 <div className="infobox" style={{display:"flex", flexDirection:"column", marginRight:"50px"}}>
-                    <p className="info" style={{width:"600px"}}>This success is fueled by a competitive spirit and a dedication to hard work, ingrained within the Spanish tennis community. Aspiring Spanish players train hard every day with hopes of one day becoming the next Spanish tennis prodigy. </p>   
+                    <p className="info" style={{width:"600px"}}>{info[10]}</p>   
 
-                    <p className="info" style={{width:"600px"}}>Camps hosted by famous Spanish players such as the Rafa Nadal Academy help to inspire young children to develop the drive to be successful.</p>    
+                    <p className="info" style={{width:"600px"}}>{info[11]}</p>    
                 </div>
 
                 <iframe className="vid" width="670" height="365" src="https://www.youtube.com/embed/V958Hg80rls?si=Aj7DzTpLJmdGK48b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

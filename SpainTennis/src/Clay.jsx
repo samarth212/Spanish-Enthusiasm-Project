@@ -18,7 +18,7 @@ const images = [clay1, clay2, clay3, clay4, clay5]
 
 
 
-const Clay = () => {
+const Clay = ({info, toggle}) => {
     const { ref: animationRef, inView: animationInView } = useInView({
         triggerOnce: true,
         threshold: 0.5, 
@@ -28,22 +28,22 @@ const Clay = () => {
         <div className="section2" id="clay">
 
             <div ref={animationRef} style={{display:"flex", alignItems:"center", marginTop:"50px", marginBottom:"50px"}} className={`animate__animated ${animationInView ? 'animate__backInRight' : 'empty'}`}>
-                <h1>The Clay Court Advantage</h1>
-                <p style={{width: "800px"}}>Spain boasts some of the world's best clay courts. Made from crushed brick, shale, or limestone, these courts create a grippy surface that slows down the ball, encouraging strategic rallies and demanding endurance from players. This characteristic makes them perfect for the grueling, baseline-oriented style of play that Spanish tennis is known for.</p>
+                <h1>{info[2]}</h1>
+                <p style={{width: "800px"}}>{info[12]}</p>
             </div>
 
             <Slideshow imageUrls = {images}></Slideshow>
 
             <div style={{display:"flex", marginTop:"100px", alignItems:"center", marginBottom:"50px"}}>
                 <div>
-                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>Play Style</p>
-                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>Spanish players traditionally excel at baseline rallies using powerful ground-strokes and topspin. The slower clay court allows them to control the point and wear down their opponents.</p>
+                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>{info[13]}</p>
+                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>{info[14]}</p>
 
-                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>Footwork</p>
-                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>Spanish training emphasizes footwork drills to master the sliding technique required on clay. This agility gives them an edge in retrieving shots and chasing down drop shots.</p>
+                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>{info[15]}</p>
+                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>{info[16]}</p>
 
-                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>Mental Toughness</p>
-                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>Clay court matches are known for their physically demanding nature. Spanish players are known for their mental fortitude and ability to stay focused during long rallies.</p>
+                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>{info[17]}</p>
+                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>{info[18]}</p>
                 </div>
 
                 <div className="imgcont" style={{display:"flex", flexDirection:"column", marginLeft:"100px"}}>
