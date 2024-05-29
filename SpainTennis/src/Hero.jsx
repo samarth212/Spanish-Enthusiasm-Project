@@ -1,27 +1,29 @@
 import "./hero.css";
 import img from "./assets/images/img1.jpeg";
 import hero1 from "./assets/images/home2.jpg"
+import { useState } from "react";
 
-const Hero = () => {
+const Hero = ({info, func, toggle}) => {
 
 
     return (
         <>
         
         <div style={{display:"flex", position:"absolute", top:"20px"}} className="nav">
-            <a href="/about" target="_blank">About</a>
-            <a href="#legacy">A Legacy of Champions</a>
-            <a href="#clay">The Clay Court Advantage</a>
-            <a href="#rise">A Sport on the Rise</a>
-            <a href="#borders">Beyond Spain's Borders</a>
+            <a href="/about" target="_blank">{info[0]}</a>
+            <a href="#legacy">{info[1]}</a>
+            <a href="#clay">{info[2]}</a>
+            <a href="#rise">{info[3]}</a>
+            <a href="#borders">{info[4]}</a>
+            <button onClick={func}>{toggle ? 'Español' : 'English'}</button>
         </div>
 
         <img className="bg" src={hero1}/>
         <div className="title-cont">
-            <p className="title">Tennis in <span>Spain</span></p>
+            <p className="title">{info[5]} <span>{info[6]}</span></p>
             <div className="warn">This site is not optimized for mobile. It is recommended to view on a desktop or a PC.</div>
-            <p className="title-desc">Explore this website to learn about how tennis has been influential part of Spanish culture.</p>
-            <a href="#legacy"><button className="hero-button">Learn More</button></a>
+            <p className="title-desc">{info[7]}</p>
+            <a href="#legacy"><button className="hero-button">{info[8]}</button></a>
         </div>
 
         </>
