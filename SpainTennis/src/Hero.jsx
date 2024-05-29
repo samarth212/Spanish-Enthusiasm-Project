@@ -15,7 +15,7 @@ const Hero = ({info, func, toggle}) => {
             <a href="#clay">{info[2]}</a>
             <a href="#rise">{info[3]}</a>
             <a href="#borders">{info[4]}</a>
-            <button onClick={func}>{toggle ? 'Español' : 'English'}</button>
+            <button style={{paddingTop:"5px", paddingBottom:"5px", paddingRight:"17px", paddingLeft:"17px", backgroundColor:"orange", border:"none", borderRadius:"10px", color: "black", fontSize:"15px", fontWeight:"700"}} onClick={func}>{toggle ? 'Español' : 'English'}</button>
         </div>
 
         <img className="bg" src={hero1}/>

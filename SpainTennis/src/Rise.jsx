@@ -28,7 +28,7 @@ const Rise = ({info, toggle}) => {
                     <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>{info[20]}</p>
                     <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>{info[21]}</p>
 
-                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>J{info[22]}</p>
+                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>{info[22]}</p>
                     <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>{info[23]}</p>
 
                     <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>{info[24]}</p>
