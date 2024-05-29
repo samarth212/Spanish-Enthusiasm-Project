@@ -15,7 +15,7 @@ const Hero = ({info, func, toggle}) => {
             <a href="#clay">{info[2]}</a>
             <a href="#rise">{info[3]}</a>
             <a href="#borders">{info[4]}</a>
-            <button style={{paddingTop:"5px", paddingBottom:"5px", paddingRight:"17px", paddingLeft:"17px", backgroundColor:"orange", border:"none", borderRadius:"10px", color: "black", fontSize:"15px", fontWeight:"700"}} onClick={func}>{toggle ? 'Español' : 'English'}</button>
+            <button style={{paddingTop:"5px", paddingBottom:"5px", paddingRight:"17px", paddingLeft:"17px", backgroundColor:"orange", border:"none", borderRadius:"10px", color: "black", fontSize:"15px", fontWeight:"700", cursor:"pointer"}} onClick={func}>{toggle ? 'Español' : 'English'}</button>
         </div>
 
         <img className="bg" src={hero1}/>
@@ -23,7 +23,7 @@ const Hero = ({info, func, toggle}) => {
             <p className="title">{info[5]} <span>{info[6]}</span></p>
             <div className="warn">This site is not optimized for mobile. It is recommended to view on a desktop or a PC.</div>
             <p className="title-desc">{info[7]}</p>
-            <a href="#legacy"><button className="hero-button">{info[8]}</button></a>
+            <a href="#legacy"><button style={{cursor:"pointer"}} className="hero-button">{info[8]}</button></a>
         </div>
 
         </>

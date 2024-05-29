@@ -22,7 +22,7 @@ const Legacy = ({info, toggle}) => {
             
 
             <div style={{overflow: "hidden", width: "100%", height: "700px"}}>
-                <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1fRJVgrlNqakmNcwaHR441tk8GzqgZK0KfsedhJyd9uk&font=Default&lang=en&initial_zoom=2&height=1000' width='100%' height='1000' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+                <iframe src={info[43]} width='100%' height='1000' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
             </div>
             
 
