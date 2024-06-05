@@ -24,6 +24,11 @@ const Clay = ({info, toggle}) => {
         threshold: 0.5, 
     });
 
+    const { ref: animationRef2, inView: animationInView2 } = useInView({
+        triggerOnce: true,
+        threshold: 0.1, 
+    });
+
     return (
         <div className="section2" id="clay">
 
@@ -36,17 +41,17 @@ const Clay = ({info, toggle}) => {
 
             <div style={{display:"flex", marginTop:"100px", alignItems:"center", marginBottom:"50px"}}>
                 <div>
-                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>{info[13]}</p>
-                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>{info[14]}</p>
+                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}} ref={animationRef2} className={`animate__animated ${animationInView2 ? 'animate__backInDown' : 'empty'}`}>{info[13]}</p>
+                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}} ref={animationRef2} className={`animate__animated ${animationInView2 ? 'animate__backInDown' : 'empty'}`}>{info[14]}</p>
 
-                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>{info[15]}</p>
-                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>{info[16]}</p>
+                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}} ref={animationRef2} className={`animate__animated ${animationInView2 ? 'animate__backInLeft' : 'empty'}`}>{info[15]}</p>
+                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}} ref={animationRef2} className={`animate__animated ${animationInView2 ? 'animate__backInLeft' : 'empty'}`}>{info[16]}</p>
 
-                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>{info[17]}</p>
-                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>{info[18]}</p>
+                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}} ref={animationRef2} className={`animate__animated ${animationInView2 ? 'animate__backInUp' : 'empty'}`}>{info[17]}</p>
+                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}} ref={animationRef2} className={`animate__animated ${animationInView2 ? 'animate__backInUp' : 'empty'}`}>{info[18]}</p>
                 </div>
 
-                <div className="imgcont" style={{display:"flex", flexDirection:"column", marginLeft:"100px"}}>
+                <div style={{display:"flex", flexDirection:"column", marginLeft:"100px"}} ref={animationRef2} className={`animate__animated ${animationInView2 ? 'animate__backInRight' : 'empty imgcont'}`}>
                     <img style={{width: "420px", height:"200px", objectFit:"cover", marginBottom:"50px", objectPosition:"bottom center"}} src={clay21} alt="" />
                     <img style={{width: "420px", height:"200px", objectFit:"cover"}} src={clay22} alt="" />
                 </div>

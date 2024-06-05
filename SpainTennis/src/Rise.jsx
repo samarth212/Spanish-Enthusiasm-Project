@@ -10,6 +10,10 @@ const Rise = ({info, toggle}) => {
         triggerOnce: true,
         threshold: 0.1, 
     });
+    const { ref: animationRef2, inView: animationInView2 } = useInView({
+        triggerOnce: true,
+        threshold: 0.1, 
+    });
 
     return (
         <>
@@ -22,17 +26,17 @@ const Rise = ({info, toggle}) => {
 
             <div style={{display:"flex", alignItems:"center", marginTop:"50px", marginBottom:"50px"}}>
 
-                <img className="img" style={{width: "650px", height:"450px", objectFit:"cover"}} src={tennis} alt="" />
+                <img style={{width: "650px", height:"450px", objectFit:"cover"}} src={tennis} alt="" ref={animationRef2} className={`animate__animated ${animationInView2 ? 'animate__backInLeft' : 'empty img'}`}/>
 
                 <div style={{marginLeft:"100px"}}>
-                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>{info[20]}</p>
-                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>{info[21]}</p>
+                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}} ref={animationRef2} className={`animate__animated ${animationInView2 ? 'animate__backInDown' : 'empty'}`}>{info[20]}</p>
+                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}} ref={animationRef2} className={`animate__animated ${animationInView2 ? 'animate__backInDown' : 'empty'}`}>{info[21]}</p>
 
-                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>{info[22]}</p>
-                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>{info[23]}</p>
+                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}} ref={animationRef2} className={`animate__animated ${animationInView2 ? 'animate__backInRight' : 'empty'}`}>{info[22]}</p>
+                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}} ref={animationRef2} className={`animate__animated ${animationInView2 ? 'animate__backInRight' : 'empty'}`}>{info[23]}</p>
 
-                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}}>{info[24]}</p>
-                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}}>{info[25]}</p>
+                    <p style={{fontWeight: "700", marginTop:"0", marginBottom:"0"}} ref={animationRef2} className={`animate__animated ${animationInView2 ? 'animate__backInUp' : 'empty'}`}>{info[24]}</p>
+                    <p style={{fontWeight: "300", marginTop:"0", marginBottom:"30px", width:"600px"}} ref={animationRef2} className={`animate__animated ${animationInView2 ? 'animate__backInUp' : 'empty'}`}>{info[25]}</p>
                 </div>
 
 

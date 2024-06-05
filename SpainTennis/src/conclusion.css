@@ -40,6 +40,12 @@
     color: red;
 }
 
+.empty{
+
+    visibility: hidden;
+}
+
+
 @media (max-width: 1000px){
     .bgimg{
         display: none;
